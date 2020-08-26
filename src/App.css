@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 2fr));
+  grid-auto-rows: min-content;
+  gap: 20px 20px;
+  grid-template-areas: "asd a2 a3 a4" "a5 a6 a7 a8" "a9 a10 a11 a12";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.asd { grid-area: asd; }
+
+.a2 { grid-area: a2; }
+
+.a3 { grid-area: a3; }
+
+.a4 { grid-area: a4; }
+
+.a5 { grid-area: a5; }
+
+.a6 { grid-area: a6; }
+
+.a7 { grid-area: a7; }
+
+.a8 { grid-area: a8; }
+
+.a9 { grid-area: a9; }
+
+.a10 { grid-area: a10; }
+
+.a11 { grid-area: a11; }
+
+.a12 { grid-area: a12; }
+
+.girl {
+  height: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 700px) {
+  .grid-container {
+    grid-template-areas: "asd a2"
+                          "a3 a4" 
+                          "a5 a6"
+                          "a7 a8" 
+                          "a9 a10"
+                          " a11 a12";
   }
 }

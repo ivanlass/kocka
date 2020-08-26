@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import picka from './photos/picka.jpg'
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+        <div class="grid-container">
+          <div class="asd girl" style={{backgroundImage: `url(${picka})`, backgroundSize:"cover"}}></div>
+          <div class="a2 girl" style={{backgroundImage: `url(${picka})`, backgroundSize:"cover"}}></div>
+          <div class="a3 girl" style={{backgroundImage: `url(${picka})`, backgroundSize:"cover"}}></div>
+          <div class="a4 girl" style={{backgroundImage: `url(${picka})`, backgroundSize:"cover"}}></div>
+
+          <div class="a5 girl" style={{backgroundImage: `url(${picka})`, backgroundSize:"cover"}}></div>
+          <div class="a6 girl" style={{backgroundImage: `url(${picka})`, backgroundSize:"cover"}}></div>
+          <div class="a7 girl" style={{backgroundImage: `url(${picka})`, backgroundSize:"cover"}}></div>
+          <div class="a8 girl" style={{backgroundImage: `url(${picka})`, backgroundSize:"cover"}}></div>
+
+          <div class="a9 girl" style={{backgroundImage: `url(${picka})`, backgroundSize:"cover"}}></div>
+          <div class="a10 girl" style={{backgroundImage: `url(${picka})`, backgroundSize:"cover"}}></div>
+          <div class="a11 girl" style={{backgroundImage: `url(${picka})`, backgroundSize:"cover"}}></div>
+          <div class="a12 girl" style={{backgroundImage: `url(${picka})`, backgroundSize:"cover"}}></div>
+        </div>
+      </div>
   );
 }
 
